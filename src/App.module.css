@@ -1,49 +1,86 @@
-/* .headerContainer {
+.headerContainer {
     display: flex;
-} */
+    justify-content: space-between;
+    align-items: center;
+}
+.arrowDown {
+    color: red;
+}
 
 .screenName {
     text-align: center;
-    font-size: 2rem;
+    font-size: 0.7rem;
     margin: 1rem auto;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.linkStd {
+    color: red;
+    text-decoration: none;
+    font-size: 0.6rem;
 }
 
 .containerRestaurant {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1rem;
+    gap: 0.8rem;
+    justify-content: flex-start;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .restaurantName {
-    font-size: 3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: -0.3rem;
+}
+
+.containerRestaurant a{
+    font-weight: 600;
 }
 
 .logoRestaurant {
-    height: 4rem;
+    height: 1.8rem;
+    border-radius: 100px;
 }
 
 .listTitle {
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: start;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.foodImage {
+    width: 10%;
+    border-radius: 4px;
 }
 
 .itemName {
-    font-size: 1rem;
+    font-size: 0.5rem;
+    font-weight: 600;
 }
 
 .listItem {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
+    width: 100%;
+}
+
+.listItem .amountProduct {
+    justify-self: flex-end;
 }
 
 .listName {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    align-items: flex-start;
+}
+
+.listName p {
+    font-size: 0.5rem;
 }
 
 .amountProduct {
