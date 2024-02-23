@@ -33,24 +33,53 @@ function App() {
             <a href="#" className={style.linkStd}>Adicionar mais itens</a>
           </div>
         </section>
+        <section className={style.listContainer}>
           <h3 className={style.listTitle}>Itens Adicionados</h3>
-        <ul className={style.listContainer}>
-          <li className={style.listItem}>
-            <img src="src/assets/pizza-g-2s.jpg" alt="Foto de uma pizza de 2 sabores" className={style.foodImage} />
-            <section>
-              <div className={style.listName}>
-                <h4 className={style.itemName}>Pizza Grande 2 Sabores - Muzzarela e Calabresa</h4>
-                <p>Pizza Grande meia Muzzarela meia Calabresa </p>
+          <ul >
+            <li className={style.listItem}>
+              <div className={style.listItemName}>
+                <img src="src/assets/pizza-g-2s.jpg" alt="Foto de uma pizza de 2 sabores" className={style.foodImage} />
+                  <div className={style.listName}>
+                    <h4 className={style.itemName}>Pizza Grande 2 Sabores - Muzzarela e Calabresa</h4>
+                    <p className={style.listDescription}>Pizza Grande meia Muzzarela meia Calabresa </p>
+                    <p className={style.listPrice}>R$ 40,00</p>
+                  </div>
               </div>
-                <p>R$ 40,00</p>
-            </section>
-            <div className={style.amountProduct}>
-              <button onClick={subItem}>-</button>
-              <p>{amount}</p>
-              <button onClick={addItem}>+</button>
+              <div className={style.amountProduct}>
+                <button onClick={subItem}>-</button>
+                <p>{amount}</p>
+                <button onClick={addItem}>+</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <h3 className={style.listTitle}>Resumo de valores</h3>
+          <ul>
+            <li className={style.listPriceItem}>
+              <p className={style.listPriceCategory}>Subtotal</p>
+              <p className={style.listPriceCategory}>R$ Valor</p>
+            </li>
+            <li className={style.listPriceItem}>
+              <p className={style.listPriceCategory}>Taxa de entrega</p>
+              <p className={style.listPriceCategory}>Valor</p>
+            </li>
+            <hr />
+            <li className={style.listPriceItem}>
+              <h3 className={style.listPriceTotal}>Total</h3>
+              <p className={style.listPriceTotal}>Valor</p>
+            </li>
+            <hr />
+          </ul>
+        </section>
+        <section className={style.finalOrder}>
+            <div>
+              <p className={style.listDescription}>Total com <span>entrega grátis</span></p>
+              <p>R$ XX,xx</p>
             </div>
-          </li>
-        </ul>
+            <button type="submit">Continuar</button>
+        </section>
       </main>
     </>
   );
