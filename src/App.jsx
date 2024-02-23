@@ -85,7 +85,7 @@ let precoTotal = typeof(taxaDeEntrega) == 'number' ? formatarMoedaParaReal((amou
       <main>
         <section className={style.containerRestaurant}>
           <img
-            src="./src/assets/14852523_5528439 (1).jpg"
+            src="/imagens/14852523_5528439 (1).jpg"
             alt="logo do Restaurante"
             className={style.logoRestaurant}
           />
@@ -99,7 +99,7 @@ let precoTotal = typeof(taxaDeEntrega) == 'number' ? formatarMoedaParaReal((amou
           <ul >
           {amount != 0 && <li className={style.listItem}>            
               <div className={style.listItemName}>
-                <img src="./src/assets/pizza-g-2s.jpg" alt="Foto de uma pizza de 2 sabores" className={style.foodImage} />
+                <img src="/imagens/pizza-g-2s.jpg" alt="Foto de uma pizza de 2 sabores" className={style.foodImage} />
                   <div className={style.listName}>
                     <h4 className={style.itemName}>{pizzas[1].sabor}</h4>
                     <p className={style.listDescription}>{pizzas[1].descricao}</p>
